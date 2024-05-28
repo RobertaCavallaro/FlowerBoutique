@@ -1,0 +1,766 @@
+
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 10px;
+  
+}
+
+.modal-header {
+  background-color: #e3342f;
+  color: white;
+}
+
+.modal-footer .btn {
+  background-color: #e3342f;
+  color: white;
+}
+
+.modal-footer .btn:hover {
+  background-color: #cc293d;
+}
+
+.close{
+  align-self: flex-end; 
+}
+
+
+
+
+.navbar-toggler {
+  border-color: #e91e63; /* Dark pink border for the toggler */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom icon color */
+}
+
+.w3-lobster {
+  font-family: "Lobster", serif;
+  font-size: 40px;
+  color: #c2185b;
+  padding-right: 30px;
+}
+
+/* Ensure all cards and images have the same size and alignment */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center align the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+}
+
+.card-img-top {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center; /* Center align text within cards */
+}
+
+.card-title {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.review-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Style for the buttons */
+.btn {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px; /* Fully rounded button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+.btn:hover {
+  background-color: #c2185b;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 40px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #d63384;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.sidebar label[for="price-range"],
+.sidebar label[for="gender"],
+.sidebar label[for="color"],
+.sidebar label[for="season"] {
+  font-weight: bold;
+}
+
+.fa-star.checked {
+  color: #FFD700;
+}
+
+.color-options {
+  display: flex;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.foto {
+  background-color: #e3f2fd;
+  padding-top: 10px;
+}
+
+.carousel-item .col-md-4 img {
+  margin: 10px;
+}
+
+.quantity-input {
+  display: flex;
+  align-self: center;
+}
+
+.minus-btn {
+  margin-right: 5px;
+}
+
+.plus-btn {
+  margin-left: 5px;
+}
+
+.season-text {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.season-text:hover {
+  background-color: #ffe0e0;
+  text-decoration: none;
+}
+
+.carousel-caption h5 {
+  color: black;
+}
+
+
+/* Custom styles for carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border-radius: 50%;
+}
+
+/* Custom styles for carousel */
+.carousel {
+  max-width: 600px; /* Decrease the size of the carousel */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-inner img {
+  max-height: 300px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M4.707 1.707a1 1 0 0 0-1.414 0L0.5 4.5 3.293 7.293a1 1 0 0 0 1.414-1.414L3.914 5.5H8V2.5H3.914L4.707 3.293a1 1 0 0 0 0-1.586z"/></svg>');
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 8 8"><path d="M3.293 1.707a1 1 0 0 1 1.414 0L7.5 4.5 4.707 7.293a1 1 0 0 1-1.414-1.414L4.086 5.5H0V2.5h4.086L3.293 3.293a1 1 0 0 1 0-1.586z"/></svg>');
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.ceremony-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+.ceremony-text {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #000; /* Set the color to black or any other color */
+}
+
+/* Optional: Add a hover effect */
+.ceremony-link:hover .ceremony-text {
+  color: #555; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Hero Section Styles */
+.ceremony-page .hero-section {
+  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+}
+
+.ceremony-page .hero-section h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/* Ceremony Details Styles */
+.ceremony-page .ceremony-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.ceremony-page .card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 416px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.ceremony-page .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ceremony-page .card-content {
+  padding: 20px;
+}
+
+.ceremony-page .card-content p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.ceremony-page .price {
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin: 10px 0;
+}
+
+.ceremony-page .card .btn.ceremony-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.ceremony-page .card .btn.ceremony-btn:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Navbar Customization */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e3342f;
+  display: flex;
+  justify-content: space-between; /* Ensures maximum use of horizontal space */
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #e3342f !important;
+  flex-grow: 1; /* Allows the brand area to expand as needed */
+  white-space: nowrap;
+}
+
+
+.navbar-collapse {
+  flex-grow: 2; /* Allows navigation links area to take more space if needed */
+}
+.nav-link {
+  font-size: 1rem;
+  color: #333 !important;
+  display: inline;
+
+}
+.navbar-nav .nav-item {
+  margin-right: 25px;  /* Adjust this value as needed */
+}
+
+a:hover {
+  color:  #e60073 ; /* Makes the color the same as the parent element */
+  text-decoration: none; /* Adds an underline to the link */
+  background-color: initial; /* Resets to the default background */
+}
+
+
+
+.nav-link:hover {
+  color: #e3342f !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #e3342f;
+}
+
+.form-inline .form-control {
+  border-radius: 30px;
+}
+
+.form-inline .btn {
+  border-radius: 30px;
+  color: white;
+  background-color: #e3342f;
+}
+
+
+.form-inline .btn:hover {
+  background-color: #cc293d;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #e3342f;
+}
+
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.glow {
+  font-family: "Lobster", serif;
+
+  color: #80123e;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  padding-bottom: 40px;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.product {
+  margin-bottom: 30px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product p {
+  color: #666;
+}
+
+.product .btn {
+  background-color: #e3342f;
+  color: white;
+  border-radius: 30px;
+}
+
+.product .btn:hover {
+  background-color: #cc293d;
+}
+
+/* Custom styles for modal backdrop */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.modal-backdrop.show {
+  opacity: 0;
+  z-index: 0;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* search button animation */
+
+.custom-form input[type="text"] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Apply the focus effect specifically to text inputs inside .custom-form */
+.custom-form input[type="text"]:focus {
+  width: 100%;
+}
+
+
+/* Contact Modal Styling */
+#contact-modal .modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Adjusted for better centering */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust width for different screen sizes */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+#contact-modal .close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#contact-modal .close-button:hover,
+#contact-modal .close-button:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-modal label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+#contact-modal input[type="email"],
+#contact-modal input[type="tel"],
+#contact-modal textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+
+#contact-modal button[type="submit"] {
+  background-color: #e3342f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded edges */
+  border: none;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+#contact-modal button[type="submit"]:hover {
+  background-color: #cc293d;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+
+/* Login and Register Modal Styling */
+#loginModal .modal-content, #registerModal .modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Centering the modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Responsive width */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth appearance */
+}
+
+#loginModal .close, #registerModal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#loginModal .close:hover, #registerModal .close:hover,
+#loginModal .close:focus, #registerModal .close:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#loginModal form, #registerModal form {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginModal label, #registerModal label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+#loginModal input[type="email"],
+#loginModal input[type="password"],
+#registerModal input[type="text"],
+#registerModal input[type="password"],
+#registerModal input[type="email"] {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+
+#loginModal button[type="submit"], #registerModal button[type="submit"] {
+  background-color: #e3342f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px; /* Smooth rounded edges */
+  border: none;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s; /* Responsive hover effects */
+}
+
+#loginModal button[type="submit"]:hover, #registerModal button[type="submit"]:hover {
+  background-color: #cc293d;
+  transform: scale(1.05); /* Enlarge button slightly on hover */
+}
+
+
+/* added to cart notification */
+.cart-notification {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  display: none; /* Hidden by default */
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  animation: fadeInOut 3s; /* Animation for the notification */
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
